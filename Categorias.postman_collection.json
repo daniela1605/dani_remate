@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "02137385-0653-4976-8223-60c8d5842595",
+		"name": "Categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42829888",
+		"_collection_link": "https://guerrero-shop.postman.co/workspace/Guerrero-Shop-Workspace~1d2fb7df-8786-44f7-88ab-9e2ca2fcc364/collection/42829888-02137385-0653-4976-8223-60c8d5842595?action=share&source=collection_link&creator=42829888"
+	},
+	"item": [
+		{
+			"name": "Inserta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\":\"Otros\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\": \"Fichas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/categoria/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cambiar Estatus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\":\"Abarrotes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/categoria/1/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"categoria",
+						"1",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/categoria/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "7c044947-cb2d-4d1f-8a0f-5ad1f43166ec",
+		"name": "Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42829888",
+		"_collection_link": "https://guerrero-shop.postman.co/workspace/Guerrero-Shop-Workspace~1d2fb7df-8786-44f7-88ab-9e2ca2fcc364/collection/42829888-7c044947-cb2d-4d1f-8a0f-5ad1f43166ec?action=share&source=collection_link&creator=42829888"
+	},
+	"item": [
+		{
+			"name": "Listar Productos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar Producto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\":\"Ficha\",\n  \"precio\":50,\n  \"cantidad\":100,\n  \"cveCategoria\":1,\n  \"activo\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar informacion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\":\"Ficha 100\",\n  \"precio\":100,\n  \"cantidad\":100,\n  \"cveCategoria\":1,\n  \"activo\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/producto/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"producto",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Producto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/producto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"producto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cambiar Estatus producto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"descripcion\":\"Abarrotes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/producto/2/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"producto",
+						"2",
+						"true"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "5dc5bba1-393e-40c0-bd97-ecaffe1d9524",
+		"name": "Carrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42829888",
+		"_collection_link": "https://guerrero-shop.postman.co/workspace/Guerrero-Shop-Workspace~1d2fb7df-8786-44f7-88ab-9e2ca2fcc364/collection/42829888-5dc5bba1-393e-40c0-bd97-ecaffe1d9524?action=share&source=collection_link&creator=42829888"
+	},
+	"item": [
+		{
+			"name": "Agregar produtos carrito",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cveUsuario\": 4,\r\n  \"cantidad\": 1,\r\n  \"cveProducto\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/carrito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar carrito",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/carrito/insertarDesdeCarrito/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"carrito",
+						"insertarDesdeCarrito",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarProductoDelCarrito",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/carrito/4/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"carrito",
+						"4",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar carrito",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/carrito/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"carrito",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

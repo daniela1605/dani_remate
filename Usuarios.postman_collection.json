@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "8ae706fa-3846-4016-a322-0aa52fd93d34",
+		"name": "Usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42829888",
+		"_collection_link": "https://guerrero-shop.postman.co/workspace/Guerrero-Shop-Workspace~1d2fb7df-8786-44f7-88ab-9e2ca2fcc364/collection/42829888-8ae706fa-3846-4016-a322-0aa52fd93d34?action=share&source=collection_link&creator=42829888"
+	},
+	"item": [
+		{
+			"name": "Listar Usuarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar Usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\":\"Jasmin\",\n  \"apellidos\":\"Guerrero Lozano\",\n  \"username\":\"miriam1\",\n  \"password\":\"1234\",\n  \"cveRol\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar informacion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"Miriam\",\n  \"apellidos\": \"Guerrero Lozano\",\n  \"cveRol\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/usuario/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"usuario",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdmVVc3VhcmlvIjoxLCJub21icmUiOiJNaXJpYW0iLCJhcGVsbGlkb3MiOiJHdWVycmVybyIsInVzZXJuYW1lIjoibWlyaWFtIiwiY3ZlUm9sIjoxLCJpYXQiOjE3MzA0MzM3ODN9.8R8xVYOLneV7q7tMorhIJRhg_BcgXEszCHX_9Fiiz24",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/usuario/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"usuario",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

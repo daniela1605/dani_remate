@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "b9d31cb8-291d-48e4-b398-b531b2f9b3f7",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42829888",
+		"_collection_link": "https://guerrero-shop.postman.co/workspace/Guerrero-Shop-Workspace~1d2fb7df-8786-44f7-88ab-9e2ca2fcc364/collection/42829888-b9d31cb8-291d-48e4-b398-b531b2f9b3f7?action=share&source=collection_link&creator=42829888"
+	},
+	"item": [
+		{
+			"name": "Iniciar Sesion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"miriam\",\n  \"password\":\"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
